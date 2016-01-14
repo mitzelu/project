@@ -1,0 +1,22 @@
+<h1>{{ doctor.name}}</h1>
+<ul>
+    <li>{{ doctor.name }}</li>
+    <li>{{ doctor.specialization }}</li>
+    <li>{{ doctor.photo }}</li>
+    <li>{{ doctor.rating }}</li>
+</ul>
+
+
+ <p> Choose the date for visit </p>
+ 	<select>
+	    {% for day in available_days %}
+	    	<option value= "{{ year }}/{{month}}/{{day}}">{{ year }}/{{month}}/{{day}}</option>
+	    {% endfor %}
+    </select>
+
+<form action = "/booking/{{ doctor.id }}/">
+	<input type="submit" value="Book the Doctor" >
+</form>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+

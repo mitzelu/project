@@ -1,0 +1,21 @@
+<form action = "/bookingsucced/{{ doctor.id }}/" method = "post">     {% csrf_token %}
+
+
+    <p> You Select the doctor <p>
+
+        <ul>
+            <li>{{ doctor.name }}</li>
+            <li>{{ doctor.specialization }}</li>
+        </ul>
+
+    <p>First Name</p>
+    <input type="text" name="firstName" placeholder="">
+    <p> Last Name</p>
+    <input type="text" name="lastName" placeholder="">
+    <p>Phone</p>
+    <input type="text" name="phone"  placeholder="">
+    <p>Email</p>
+    <input type="text"  name="email" placeholder="">
+    <p> </p>
+    <input type="submit" value="Submit" >
+</form>

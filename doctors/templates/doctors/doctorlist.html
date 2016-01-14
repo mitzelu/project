@@ -1,0 +1,12 @@
+{% if doctors %}
+    <ul>
+    {% for doctor in doctors %}
+        <h3><a href="/doctors/{{ doctor.id }}/">{{ doctor.name }}</a></h3>
+	    <li>{{ doctor.specialization }}</li>
+	    <li>{{ doctor.education }}</li>
+	    <li>{{ doctor.rating }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No doctors are available.</p>
+{% endif %}

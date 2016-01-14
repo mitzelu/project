@@ -1,0 +1,30 @@
+{% load i18n %}
+<html>
+<head>
+<style type="text/css">
+.shares a{
+    float: left; margin-right: 10px;
+    cursor: pointer; text-decoration: none;
+}
+.shares{
+    height: 20px;
+}
+</style>
+</head>
+<body>
+
+<p>
+{% trans "Welcome" %} {{firstname}},
+</p>
+<p>
+{% trans "Your reservation" %} (ID: <b>{{appointment_id}}</b>) {%trans "for" %} <strong>{{ date|date:"d-m-Y"}}</strong> {% trans "has been successfully created" %}.
+
+<br/><br/>
+{% trans "Remember! You can cancel your reservation and change the reservation day no later than 48 hours before the selected term" %}. {% trans "To make the change, log in to" %} <a href="{{ domain }}">{% trans "E-reservation system" %}</a> {% trans "and make the change" %}.
+</p>
+
+<p>Thanks,</p>
+MyDocc Team
+</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<form class="form-wrapper" action="/search/" method="get">
+	<!--<p>Specialization</p>
+	<input name="specializations" type="choicefield">
+	 <select id="spec" >
+		
+		{% for specialization in specializationList %}
+	
+		<option value="Specialization"> {{ specialization.type }} </option>
+		     
+		{% endfor %}		
+	</select>-->
+	<p> Specialization <p>
+	<input name="specialization" type="charfield">
+    <p> Zip Code </p>
+    <input  name="zip_code" type="charfield">
+    <p> </p>
+    <input type="submit" value="Search">
+</form>
