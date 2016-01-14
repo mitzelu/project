@@ -43,6 +43,18 @@ class PatientDAO(BaseDAO):
 		self.__localObject__ = self.__entityClass__(name=name)
 		return
 
+	def delete(self):
+		pass
+
+	def getAll(self):
+		pass
+
+	def getById(self, ID):
+		pass
+
+	def save(self):
+		pass
+
 class DoctorDAO(BaseDAO):
 	print('DoctorDAO')
 
