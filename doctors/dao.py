@@ -72,6 +72,18 @@ class DoctorDAO(BaseDAO):
 	def create(self, name, spec):
 		self.__localObject__ = self.__entityClass__(name=name, specialization=spec)
 		return
+	
+	def delete(self):
+		pass
+
+	def getAll(self):
+		pass
+
+	def getById(self, ID):
+		pass
+
+	def save(self):
+		pass
 
 class SpecializationDAO(BaseDAO):
 	print('SpecializationDAO')
@@ -83,6 +95,18 @@ class SpecializationDAO(BaseDAO):
 		print("SpecializationDAO")
 		self.__localObject__ = self.__entityClass__.objects.filter(doctor = doctor)[0]
 		return self.__localObject__
+	
+	def delete(self):
+		pass
+
+	def getAll(self):
+		pass
+
+	def getById(self, ID):
+		pass
+
+	def save(self):
+		pass
 
 class HospitalDAO(BaseDAO):
 	print('HospitalDAO')
@@ -94,6 +118,18 @@ class HospitalDAO(BaseDAO):
 		print('HospitalDAO')
 		self.__localObject__ = self.__entityClass__.objects.filter(doctor = doctor)[0]
 		return self.__localObject__
+	
+	def delete(self):
+		pass
+
+	def getAll(self):
+		pass
+
+	def getById(self, ID):
+		pass
+
+	def save(self):
+		pass
 
 class AppointmentDAO(BaseDAO):
 	print('AppointmentDAO')
