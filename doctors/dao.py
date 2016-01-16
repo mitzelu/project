@@ -123,6 +123,18 @@ class AppointmentDAO(BaseDAO):
 			days.append(item.date.day)
 
 		return days
+	
+	def delete(self):
+		pass
+
+	def getAll(self):
+		pass
+
+	def getById(self, ID):
+		pass
+
+	def save(self):
+		pass
 
 	def create(self, patient, doctor, date, valid):
 		self.__localObject__ = self.__entityClass__(patient=patient, doctor=doctor, date=date, validate=valid)
