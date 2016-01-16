@@ -80,7 +80,8 @@ class DoctorDAO(BaseDAO):
 		pass
 
 	def getById(self, ID):
-		pass
+		self.__localObject__ = get_object_or_404(self.__entityClass__, pk=ID)
+		return self.__localObject__
 
 	def save(self):
 		pass
@@ -103,7 +104,8 @@ class SpecializationDAO(BaseDAO):
 		pass
 
 	def getById(self, ID):
-		pass
+		self.__localObject__ = get_object_or_404(self.__entityClass__, pk=ID)
+		return self.__localObject__
 
 	def save(self):
 		pass
@@ -126,7 +128,8 @@ class HospitalDAO(BaseDAO):
 		pass
 
 	def getById(self, ID):
-		pass
+		self.__localObject__ = get_object_or_404(self.__entityClass__, pk=ID)
+		return self.__localObject__
 
 	def save(self):
 		pass
